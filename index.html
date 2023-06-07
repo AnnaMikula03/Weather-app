@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Weather.app</title>
+</head>
+
+<body>
+	<div class="wrapper">
+
+
+
+		<header class="header">
+			<div class="header__container">
+				<h1 class="header__title">WEATHER APP</h1>
+				<form id="search-form" class="header__form">
+					<input id="city-input" type="text" name="" class="header__input" placeholder="Enter city name">
+					<button class="header__button">Search</button></input>
+					<button id="current-location-button" class="header__button">Current</button></input>
+				</form>
+			</div>
+
+		</header>
+
+
+
+
+		<main class="page">
+			<section class="page__weather weather">
+				<div class="weather__container">
+
+					<h2 id="city" class="weather__city">Mariupol, Ukraine</h2>
+					<div id="date" class="weather__date">Monday 22-00</div>
+
+
+					<div class="weather__body">
+						<div class="weather__temp-box">
+							<div class="weather__image"><img src="img/weathericon.png" alt="image"></div>
+
+							<div class="weather__temperature">
+								<span class="temperature" id="temperature">19</span><span class="units">
+									<a href="#" id="celsius-link">°C</a>
+								
+								</span>
+							</div>
+							<div id="description" class="weather__clouds">Broken Clouds</div>
+						</div>
+
+						<div class="weather__info">
+							<div class="weather__hymidity">Hymidity: <span id="humidity">50</span>%</div>
+							<div class="weather__wind">Wind: <span id="wind">3 </span>km/h</div>
+						</div>
+
+
+					</div>
+
+
+
+
+				</div>
+
+
+
+			</section>
+
+		</main>
+
+
+		<footer class="footer">
+			<div class="footer__container">
+
+
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

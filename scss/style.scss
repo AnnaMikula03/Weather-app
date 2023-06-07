@@ -1,0 +1,176 @@
+@use "sass:math";
+
+$mainColor: #828282;
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,900&display=swap");
+
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_icons.scss";
+@import "_common.scss";
+@import "_header.scss";
+@import "_footer.scss";
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: rem(16);
+  background: linear-gradient(
+      45deg,
+      rgba(183, 204, 248, 0.717),
+      rgba(7, 43, 127, 0.679)
+    ),
+    url("../img/background.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: rem(1170);
+  margin: 0 auto;
+  padding-left: rem(15);
+  padding-right: rem(15);
+}
+
+.page {
+  // .page__weather
+
+  &__weather {
+  }
+}
+.weather {
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+  @media (max-width: em(767.91)) {
+    padding-top: rem(50);
+    padding-bottom: rem(50);
+  }
+
+  // .weather__container
+
+  &__container {
+  }
+
+  // .weather__city
+
+  &__city {
+    &:not(:last-child) {
+      margin-bottom: rem(50);
+    }
+  }
+
+  &__city,
+  &__date {
+    font-weight: 500;
+    font-size: rem(50);
+    line-height: math.div(64, 50);
+
+    text-align: center;
+  }
+
+  // .weather__date
+
+  &__date {
+    &:not(:last-child) {
+      margin-bottom: rem(50);
+    }
+  }
+
+  // .weather__body
+
+  &__body {
+    display: flex;
+    align-items: center;
+    column-gap: rem(20);
+    @media (max-width: em(767.91)) {
+      flex-direction: column;
+      row-gap: rem(50);
+    }
+  }
+
+  // .weather__temp-box
+
+  &__temp-box {
+    flex: 0 1 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+  }
+
+  // .weather__image
+
+  &__image {
+    img {
+      width: rem(120);
+      height: rem(120);
+    }
+  }
+
+  // .weather__temperature
+
+  &__temperature {
+    font-weight: 500;
+    font-size: rem(50);
+    line-height: math.div(42, 50);
+  }
+
+  // .weather__clouds
+
+  &__clouds {
+    font-weight: 500;
+    font-size: rem(20);
+    line-height: math.div(24, 20);
+    background: rgba(153, 205, 50, 0.778);
+    padding: rem(5) rem(20);
+    border-radius: rem(15);
+    align-self: center;
+  }
+
+  // .weather__info
+
+  &__info {
+    flex: 0 1 50%;
+
+    text-align: center;
+    display: grid;
+    gap: rem(30);
+    font-weight: 500;
+    font-size: rem(30);
+    line-height: math.div(38, 30);
+  }
+
+  // .weather__precipitation
+
+  &__precipitation {
+  }
+
+  // .weather__hymidity
+
+  &__hymidity {
+  }
+
+  // .weather__wind
+
+  &__wind {
+  }
+}
+.temperature {
+}
+.units {
+}
