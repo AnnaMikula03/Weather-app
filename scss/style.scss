@@ -54,11 +54,11 @@ body {
   }
 }
 .weather {
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  padding-top: rem(40);
+
   @media (max-width: em(767.91)) {
-    padding-top: rem(50);
-    padding-bottom: rem(50);
+    padding-top: rem(25);
+
   }
 
   // .weather__container
@@ -70,7 +70,7 @@ body {
 
   &__city {
     &:not(:last-child) {
-      margin-bottom: rem(50);
+      margin-bottom: rem(35);
     }
   }
 
@@ -87,7 +87,7 @@ body {
 
   &__date {
     &:not(:last-child) {
-      margin-bottom: rem(50);
+      margin-bottom: rem(40);
     }
   }
 

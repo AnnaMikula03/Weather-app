@@ -1,0 +1,30 @@
+.footer {
+	 padding-top: rem(50);
+  padding-bottom: rem(50);
+  @media (max-width: em(767.91)) {
+    padding-top: rem(30);
+    padding-bottom: rem(30);
+  }
+
+		// .footer__container
+
+		&__container {
+			   text-align: center;
+				 font-weight: 500;
+    font-size: rem(26);
+    line-height: math.div(30, 26);
+		}
+		// .footer__link
+
+		&__link {
+			
+	 transition: all 0.3s ease 0s;
+ @media (any-hover: hover){
+	&:hover{
+	color: red;
+	}
+ }
+		}
+}
+
+
