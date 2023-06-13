@@ -61,6 +61,23 @@ body {
 
   }
 
+ 
+		// .weather__description
+
+&__description{
+	display: flex;
+	flex: 0 1 33.333%;
+	 text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+	 align-items: center;
+	img{
+		width: 50%;
+	}
+}
+
+
   // .weather__container
 
   &__container {
@@ -106,7 +123,7 @@ body {
   // .weather__temp-box
 
   &__temp-box {
-    flex: 0 1 50%;
+  	flex: 0 1 33.333%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -122,17 +139,57 @@ body {
     }
   }
 
+
+
   // .weather__temperature
 
   &__temperature {
+
     font-weight: 500;
-    font-size: rem(50);
+    font-size: rem(60);
     line-height: math.div(42, 50);
+
+	 .active {
+		color: rgb(33, 33, 33);
+    cursor: default;
+
+
+	
+}
+
   }
+
+
+
+.units {
+		position: relative;
+    font-size: rem(16);
+    top: -34px;
+	 color: rgb(33, 33, 33);
+}
+.celsius-link {
+	color: #007bff;
+}
+
+.fahrenheit-link {
+	color: #007bff;
+}
+
+.active {
+	color: rgb(33, 33, 33);
+    cursor: default;
+}
+
+
+
+
+
+
 
   // .weather__clouds
 
   &__clouds {
+	display: inline-block;
     font-weight: 500;
     font-size: rem(20);
     line-height: math.div(24, 20);
@@ -145,7 +202,7 @@ body {
   // .weather__info
 
   &__info {
-    flex: 0 1 50%;
+  	flex: 0 1 33.333%;
 
     text-align: center;
     display: grid;

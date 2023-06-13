@@ -20,7 +20,7 @@
 				<form id="search-form" class="header__form">
 					<input id="city-input" type="text" name="" class="header__input" placeholder="Enter city name">
 					<button class="header__button">Search</button></input>
-					<button id="current-location-button" class="header__button">Current</button></input>
+
 				</form>
 			</div>
 
@@ -33,8 +33,8 @@
 			<section class="page__weather weather">
 				<div class="weather__container">
 
-					<h2 id="city" class="weather__city">Mariupol, Ukraine</h2>
-					<div id="date" class="weather__date">Monday 22-00</div>
+					<h2 id="city" class="weather__city"></h2>
+					<div id="date" class="weather__date"></div>
 
 
 					<div class="weather__body">
@@ -42,13 +42,26 @@
 							<div class="weather__image"><img src="img/weathericon.png" alt="image"></div>
 
 							<div class="weather__temperature">
-								<span class="temperature" id="temperature">19</span><span class="units">
-									<a href="#" id="celsius-link">°C</a>
-								
-								</span>
+								<span class="temperature" id="temperature"></span>
+								<span class="units"><a href="#" id="celsius-link" class="celsius-link active">°C</a> |
+									<a href="#" class="fahrenheit-link" id="fahrenheit-link">°F</a></span>
 							</div>
-							<div id="description" class="weather__clouds">Broken Clouds</div>
+
+
+
+
 						</div>
+
+
+						<div class="weather__description">
+
+							<img src="" alt="Clear" id="icon" class="float-left" />
+							<div id="description" class="weather__clouds">
+
+							</div>
+						</div>
+
+
 
 						<div class="weather__info">
 							<div class="weather__hymidity">Hymidity: <span id="humidity">50</span>%</div>

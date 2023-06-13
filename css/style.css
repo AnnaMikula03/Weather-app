@@ -205,6 +205,27 @@ body {
     padding-top: 1.5625rem;
   }
 }
+.weather__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  text-align: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.875rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.weather__description img {
+  width: 50%;
+}
 .weather__city:not(:last-child) {
   margin-bottom: 2.1875rem;
 }
@@ -239,8 +260,8 @@ body {
 }
 .weather__temp-box {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,10 +278,31 @@ body {
 }
 .weather__temperature {
   font-weight: 500;
-  font-size: 3.125rem;
+  font-size: 3.75rem;
   line-height: 0.84;
 }
+.weather__temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+.weather .units {
+  position: relative;
+  font-size: 1rem;
+  top: -34px;
+  color: rgb(33, 33, 33);
+}
+.weather .celsius-link {
+  color: #007bff;
+}
+.weather .fahrenheit-link {
+  color: #007bff;
+}
+.weather .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
 .weather__clouds {
+  display: inline-block;
   font-weight: 500;
   font-size: 1.25rem;
   line-height: 1.2;
@@ -272,8 +314,8 @@ body {
 }
 .weather__info {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
   text-align: center;
   display: grid;
   gap: 1.875rem;
